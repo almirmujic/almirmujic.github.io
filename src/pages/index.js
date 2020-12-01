@@ -1,4 +1,6 @@
 import React from 'react';
+import { Helmet } from "react-helmet"
+
 import '../styles/main.css';
 
 export default function Home() {
@@ -28,13 +30,30 @@ export default function Home() {
 	};
 
 	return (
+		<>
+		<Helmet>
+				<meta
+					name="description"
+					content="Almir - Web Developer and User Interface Designer"
+				/>
+				<meta
+					name="keywords"
+					content="Almir - Web Developer and User Interface Designer"
+				/>
+				<title>Almir</title>
+				<link
+					defer
+					href={`https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700;900&display=swap`}
+					rel="stylesheet"
+				/>
+        </Helmet>
 		<div>
 			<ul>
 				<li>
 					<h1>
 						Updated portfolio coming soon.{' '}
 						<span role="img" aria-label="Smiley">
-							😃
+							😁
 						</span>
 					</h1>
 				</li>
@@ -67,5 +86,6 @@ export default function Home() {
 				</li>
 			</ul>
 		</div>
+		</>
 	);
 }
