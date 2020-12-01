@@ -31,7 +31,12 @@ export default function Home() {
 		<div>
 			<ul>
 				<li>
-					<h1>Updated portfolio coming soon.</h1>
+					<h1>
+						Updated portfolio coming soon.{' '}
+						<span role="img" aria-label="Smiley">
+							😃
+						</span>
+					</h1>
 				</li>
 				<li>
 					<span>
